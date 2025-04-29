@@ -1,0 +1,299 @@
+/* INICIO */
+
+#index {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: #82cde6;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:active {
+  transform: scale(0.96);
+  transition: transform 0.1s;
+}
+
+button:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-family: poppins, sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f3ef;
+  font-family: poppins, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* EJERCICIO 1 */
+.button-index {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#cuadrado {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#cuadrado img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+/* EJERCICIO 2 */
+/* este sería el container principal del ejercicio */
+#principal_ppt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#player1,
+#player2 {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.player img {
+  width: 120px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+#player1 img :hover {
+  /* le doy una animación solamente a las imagenes que tiene que clicar el jugador */
+  transform: scale(1.1);
+}
+
+.resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgJugador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  margin: 5px;
+}
+
+
+#resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  font-weight: bold;
+  padding: 40px;
+}
+
+
+/* EJERCICIO 3 */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  background-color: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 6px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: auto;
+}
+
+li {
+  background-color: #A6D6D6;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+li.marked {
+  background-color: #ffe6e6;
+  border: 2px solid #dc3545;
+}
+
+#delete {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#delete:hover {
+  background-color: #c82333;
+}
+
+
+/* EJERCICIO 4 */
+.container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+}
+
+.button-container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#color {
+  background-color: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+
+/* EJERCICIO 5 */
+
+#casillas {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  margin: 40px auto;
+  max-width: 320px;
+}
+
+.casilla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffffcc; 
+  border: 2px solid #cccccc;
+  gap: 10px;
+}
+
+.ficha-img {
+  width: 100px;
+  height: 100px;
+  pointer-events: none; 
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+.ficha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 10px solid transparent;
+}
+
+   

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 DOM</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="icon" type="image/jpg" href="./Imágenes/rock-paper-scissors.png"/>
+</head>
+
+<body>
+    <header>
+        <button>
+            <a href="index.html" class="btn">Inicio</a>
+        </button>
+    </header>
+    <h1>EJERCICIO 2 DOM</h1>
+    <p>Piedra, papel, tijera.</p>
+    <div id="principal_ppt">
+        <div class="player">
+            <h2>Jugador 1</h2>
+            <div id="player1">
+                <img src="./Imágenes/piedra.jpg" alt="piedra" onclick="juego('piedra')">
+                <img src="./Imágenes/papel.jpg" alt="papel" onclick="juego('papel')">
+                <img src="./Imágenes/tijera.jpg" alt="tijera" onclick="juego('tijera')">
+            </div>
+        </div>
+
+        <div>
+            <h2 id="resultado">Resultado: </h2>
+            <div class="resultado">
+                <img id="imgJugador1" class="imgJugador" src="./Imágenes/question.jpg" alt="Jugador 1">
+                <img id="imgJugador2" class="imgJugador" src="./Imágenes/question.jpg" alt="Jugador 2">
+            </div>
+
+        </div>
+
+        <div class="player">
+            <h2>Jugador 2</h2>
+            <div id="player2">
+                <img src="./Imágenes/piedra.jpg" alt="piedra">
+                <img src="./Imágenes/papel.jpg" alt="papel">
+                <img src="./Imágenes/tijera.jpg" alt="tijera">
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/script2.js"></script>
+</body>
+
+</html>
